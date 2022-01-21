@@ -2,6 +2,8 @@
 // AskSin++
 // 2016-10-31 papa Creative Commons - http://creativecommons.org/licenses/by-nc-sa/3.0/de/
 // 2018-08-30 jp112sdl Creative Commons - http://creativecommons.org/licenses/by-nc-sa/3.0/de/
+// 2022-01-21 HMSteve Creative Commons - http://creativecommons.org/licenses/by-nc-sa/3.0/de/
+// *** Sniffer for AskSinAnalyzer integrated into dummy beacon v2
 //- -----------------------------------------------------------------------------------------------------------------------
 // ci-test=yes board=mega128 aes=no
 
@@ -62,8 +64,8 @@ using namespace as;
 
 // define all device properties
 const struct DeviceInfo PROGMEM devinfo = {
-  {0xF3, 0xFE, 0x00},          // Device ID
-  "JPBEACON02",                // Device Serial
+  {0xF3, 0xFE, 0x02},          // Device ID
+  "SGBEACSNI2",                // Device Serial
   {0xF3, 0xFE},                // Device Model
   0x10,                        // Firmware Version
   0x10,                        // Device Type
