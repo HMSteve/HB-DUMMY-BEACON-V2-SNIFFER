@@ -5,8 +5,8 @@
 // 2022-01-21 HMSteve Creative Commons - http://creativecommons.org/licenses/by-nc-sa/3.0/de/
 // *** Sniffer for AskSinAnalyzer integrated into dummy beacon v2
 //- -----------------------------------------------------------------------------------------------------------------------
-// ci-test=yes board=mega128 aes=no
 
+#define MaxDataLen 60  //to receive hmip messages that can have a bigger payload than bidcos messages
 #define MAX_FAKEDEVICE_COUNT  16
 //#define USE_DISPLAY
 
@@ -47,8 +47,8 @@
 #define CC1101_CS   10
 #define CC1101_GDO0 2
 
-#define CONFIG_BUTTON_PIN  6 //8
-#define LED                7 //4
+#define CONFIG_BUTTON_PIN 16 //8
+#define LED                4
 #endif
 
 
